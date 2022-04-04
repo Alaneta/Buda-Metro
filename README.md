@@ -20,39 +20,36 @@ Es una aplicación web que permite cargar una red de metro y calcular la ruta co
 
 ## Pre-requisitos
 * [Composer 2.1](https://getcomposer.org/download/) o superior
+* [PHP 8.0](https://www.tecmint.com/install-php-8-on-ubuntu/) o superior
+* [npm y NodeJS](https://ubunlog.com/nodejs-npm-instalacion-ubuntu-20-04-18-04/)
 
 <p align="right">(<a href="#top">volver a inicio</a>)</p>
 
 <br>
 
 ## Instalación (Linux)
-1. Crear un directorio donde alojar la aplicación
+1. Clonar el repositorio de la aplicación en el directorio elegido
    ```sh
-   mkdir buda-metro
-   ```
-
-2. Clonar el repositorio de la aplicación en el directorio creado
-   ```sh
-   cd buda-metro
    git clone https://github.com/Alaneta/Buda-Metro.git .
+   cd Buda-Metro
    ```
 
-3. Instalar las dependencias de la aplicación
+2. Instalar las dependencias de la aplicación
    ```sh
    composer install
    ```
 
-4. Actualizar las dependencias instaladas
+3. Actualizar las dependencias instaladas
    ```sh
    composer update
    ```
 
-5. Crear el archivo de variables de entorno
+4. Crear el archivo de variables de entorno
    ```sh
    cp .env.example .env
    ```
 
-6. Reemplazar la información de conexión a la base de datos en el archivo .env
+5. Reemplazar la información de conexión a la base de datos en el archivo .env
    ```sh
    DB_CONNECTION=mysql
    DB_HOST=mysql
@@ -67,17 +64,17 @@ Es una aplicación web que permite cargar una red de metro y calcular la ruta co
    > contraseña: password
 
 
-7. Generar la variable de entorno APP_KEY
+6. Generar la variable de entorno APP_KEY
    ```sh
    php artisan key:generate
    ```
 
-8. Iniciar los contenedores en modo desatendido
+7. Iniciar los contenedores en modo desatendido
     ```sh
     ./vendor/bin/sail up -d
     ```
 
-9. Instalar las dependencias requeridas
+8. Instalar las dependencias requeridas
    ```sh
    ./vendor/bin/sail npm install
    ```
