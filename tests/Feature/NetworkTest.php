@@ -5,7 +5,6 @@ namespace Tests\Feature;
 use App\Models\Network;
 use App\Models\Station;
 use Illuminate\Foundation\Testing\DatabaseTransactions;
-use Illuminate\Foundation\Testing\WithFaker;
 use Tests\TestCase;
 
 class NetworkTest extends TestCase

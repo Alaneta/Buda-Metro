@@ -25,7 +25,7 @@ Es una aplicación web que permite cargar una red de metro y calcular la ruta co
 
 <br>
 
-## Instalación
+## Instalación (Linux)
 1. Crear un directorio donde alojar la aplicación
    ```sh
    mkdir buda-metro
@@ -160,6 +160,12 @@ Para eliminar volúmenes
 
 <br>
 
+
+## Correr los test
+Los archivos con los test automáticos están ubicados en la carpeta tests/Feature y tests/Unit
+```sh
+./vendor/bin/sail artisan test
+```
 
 ## Construida con:
 | [![Laravel](readme/logos/laravel-2.svg)](https://laravel.com/) | [![PHP](readme/logos/php-1.svg)](https://www.php.net/) | [![MySQL](readme/logos/mysql-2.svg)](https://www.mysql.com/) | [![Composer](readme/logos/composer.svg)](https://getcomposer.org/) | [![Sass](readme/logos/sass-1.svg)](https://sass-lang.com/) | [![jQuery](readme/logos/jquery-1.svg)](https://jquery.com/) | [![Bootstrap](readme/logos/bootstrap-5-1.svg)](https://getbootstrap.com/) |
